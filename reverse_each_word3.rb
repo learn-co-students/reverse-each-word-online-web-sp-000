@@ -5,7 +5,8 @@ def reverse_each_word2(sentence)
     backwards_word = word.reverse
     backwards_sentence.unshift(backwards_word)
   end
-  puts backwards_sentence.join.reverse
+  backwards_sentence.reverse!
+  puts backwards_sentence.join
 end
 
 def reverse_each_word(sentence)
@@ -15,7 +16,8 @@ def reverse_each_word(sentence)
     backwards_word = word.reverse
     backwards_sentence.unshift(backwards_word)
   end
-  backwards_sentence.join.reverse
+  backwards_sentence.reverse!
+  puts backwards_sentence
 end
 
 reverse_each_word("Hi my name is Bob Stevens")
