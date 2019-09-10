@@ -1,7 +1,18 @@
+
+#def reverse_each_word(sentence)
+ # new_array = [] #why do we need a new array?
+  #backwards = sentence.split
+#  backwards.each do |new_sentence|
+ #   new_array << new_sentence.reverse
+#end  
+#new_array.join(" ")
+#end
+
 def reverse_each_word(sentence)
-  backwards = sentence.split #turn string into array of strings
-  backwards.collect do |new_sentence| #go through array 
-  new_sentence.reverse #reverse each word in array
-  #convert back to string
-  end 
+  new_array = []
+  backwards = sentence.split
+  backwards.collect do |new_sentence|
+    new_array << new_sentence.reverse
+end
+new_array.join(" ")
 end
