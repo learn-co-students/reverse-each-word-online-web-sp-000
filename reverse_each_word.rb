@@ -1,1 +1,6 @@
-reverse_each_word("Hello, is there anybody in there")
+def reverse_each_word(sentence)
+  sentence.split do |word| word.reverse
+    "Hello there, and how are you?"
+  end
+
+end
