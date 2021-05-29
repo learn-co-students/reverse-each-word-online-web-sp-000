@@ -10,5 +10,5 @@ end
 #same method to reverse each word in a string in place - but using #collect/#map
 def reverse_each_word(sentance)
   string_to_array = sentance.split(" ")
-  string_to_array.collect { |element| element.reverse }.join (" ")
+  string_to_array.collect { |element| element.reverse }.join(" ")
 end
